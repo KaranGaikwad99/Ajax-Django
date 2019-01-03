@@ -1,0 +1,45 @@
+{% extends 'mastershotinfo/base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="container1">
+    <h3>Projects</h3>
+    <ul>
+      <li>Take out from database</li>
+    </ul>
+      <button class="btn get-projects"
+      style="
+      background-color: #fbf5f5;
+      color: black;
+      border: 2px solid #af4c7b;
+      height: 35px;
+      "> GET SHOTS </button>    
+  </div>
+  
+  <div class="container2">
+    <h3 style="
+    border-top-width: 0px;
+    padding-top: 35px;">Add Projects</h3>
+    {% csrf_token %}
+    <div>
+      <label for="shots">
+        <input class="projects" type = "text" placeholder="ADD SHOTS" 
+        style="
+          padding-top: 5px;
+          padding-bottom: 5px;
+          width: 166px;
+          height: 20px;">
+      </label>
+    <button class = "btn add-projects"
+        style=
+          "background-color: #fbf5f5;
+          color: black;
+          border: 2px solid #af4c7b;
+          height: 35px;"> ADD SHOTS </button>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
